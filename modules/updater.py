@@ -101,7 +101,7 @@ async def update(_, message: Message):
         await message.reply("<blockquote>Update: selesai sayang!</blockquote>\n\n<blockquote>Merestart...</blockquote>")
         if os.path.exists("moonlogs.txt"):
             os.remove("moonlogs.txt")
-   restart()
+         restart()
 
 #nganu
 
