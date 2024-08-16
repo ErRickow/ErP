@@ -54,7 +54,7 @@ def get_readable_time(seconds: int) -> str:
 async def get_readable_time(_, message: Message):
     start = time.time()
     nganu = time.time() - start
-    uptime = time_formatter(time.time() - time.time())
+    uptime = get_readable_time(time.time() - time.time())
     await message.reply(f"<blockquote>❏ POMG!!🏓 {nganu * 1000000:.3f}ms</blockquote>\nUptime {uptime}")
 
 
