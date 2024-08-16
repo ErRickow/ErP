@@ -54,12 +54,7 @@ async def restart_cmd(_, message: Message):
         return
 
     await message.reply("<blockquote>Sedang Merestart...</blockquote>")
-    try:
-      subprocess.run(["git", "pull"])
-    except Exception as e:
-        await message.reply(format_exc(e))
-        restart()
-
+    restart()
 
 @Client.on_message(filters.command("update", prefix) & filters.me)
 async def update(_, message: Message):
