@@ -99,7 +99,7 @@ async def main():
 
     if info := db.get("core.updater", "restart_info"):
         text = {
-            "restart": "<b>Restart completed!</b>",
+            "restart": "<blockquote>Restart Selesai Sayangkuh!</blockquote>",
             "update": "<b>Update process completed!</b>",
         }[info["type"]]
         try:
