@@ -98,7 +98,7 @@ async def update(_, message: Message):
         await message.edit(format_exc(e))
         db.remove("core.updater", "restart_info")
     else:
-        await message.reply("<blockquote>Update: selesai sayang! Merestart...</blockquote>")
+        await message.reply("<blockquote>Update: selesai sayang!</blockquote>\n\n<blockquote>Merestart...</blockquote>")
         if os.path.exists("moonlogs.txt"):
             os.remove("moonlogs.txt")
         restart()
