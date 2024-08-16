@@ -105,6 +105,6 @@ async def update(_, message: Message):
 
 
 modules_help["updater"] = {
-    "update": "Update the userbot. If new core modules are avaliable, they will be installed",
+    "update": "Update Userbot Lu. Jika ada update an.",
     "restart": "Restart userbot",
 }
