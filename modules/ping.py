@@ -29,8 +29,8 @@ from utils.misc import modules_help, prefix
 async def ping(_, message: Message):
     start = time.time()
     nganu = time.time() - start
-    ownr = mention.user
-    await message.reply(f"<blockquote>❏ POMG!!🏓 {nganu * 1000000:.3f}ms</blockquote>\n")
+    uptime = time_formatter(time.time() - time.time()) - start
+    await message.reply(f"<blockquote>❏ POMG!!🏓 {nganu * 1000000:.3f}ms</blockquote>\nUptime {uptime}")
 
 
 modules_help["ping"] = {
