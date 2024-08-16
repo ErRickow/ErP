@@ -61,8 +61,7 @@ async def restart_cmd(_, message: Message):
     except Exception as e:
         await message.reply(format_exc(e))
         db.remove("core.updater", "restart_info")
-    else:
-        await message.reply("<b>Sudah Selesai Restartnya sayang...</b>")
+        restart()
 
 
 @Client.on_message(filters.command("update", prefix) & filters.me)
@@ -102,6 +101,7 @@ async def update(_, message: Message):
         await message.reply("<blockquote>Update: selesai sayang!</blockquote>\n\n<blockquote>Merestart...</blockquote>")
         if os.path.exists("moonlogs.txt"):
             os.remove("moonlogs.txt")
+            restart()
 
 #nganu
 
