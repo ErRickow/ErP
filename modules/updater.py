@@ -61,7 +61,7 @@ async def restart_cmd(_, message: Message):
     except Exception as e:
         await message.reply(format_exc(e))
         db.remove("core.updater", "restart_info")
-        restart()
+   restart()
 
 
 @Client.on_message(filters.command("update", prefix) & filters.me)
