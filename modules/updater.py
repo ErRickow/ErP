@@ -21,6 +21,13 @@ import sys
 import shutil
 import subprocess
 
+from git import Repo
+from git.exc import (
+    GitCommandError,
+    InvalidGitRepositoryError,
+    NoSuchPathError
+)
+
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
