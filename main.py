@@ -41,7 +41,7 @@ common_params = {
     "hide_password": True,
     "workdir": script_path,
     "app_version": userbot_version,
-    "device_model": f"Moon-Userbot @ {gitrepo.head.commit.hexsha[:7]}",
+    "device_model": f"ErP@ {gitrepo.head.commit.hexsha[:7]}",
     "system_version": platform.version() + " " + platform.machine(),
     "sleep_threshold": 30,
     "test_mode": config.test_server,
