@@ -14,6 +14,8 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+import re
+import asyncio
 import os
 import sys
 import shutil
@@ -102,6 +104,8 @@ async def update(_, message: Message):
         if os.path.exists("moonlogs.txt"):
             os.remove("moonlogs.txt")
         restart()
+
+#nganu
 
 
 modules_help["updater"] = {
