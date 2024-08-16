@@ -43,7 +43,7 @@ async def user_exec(client: Client, message: Message):
     code = message.text.split(maxsplit=1)[1]
     stdout = StringIO()
 
-    await message.edit("<b>Executing...</b>")
+    await message.edit("<blockquote>Wet...</blockquote>")
 
     try:
         with redirect_stdout(stdout):
