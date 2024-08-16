@@ -78,10 +78,7 @@ async def update(_, message: Message):
 
     await message.edit("<blockquote>Wet...\nSedang Update!</blockquote>")
     try:
-        if not check_command('termux-setup-storage'):
-            subprocess.run(
-                [sys.executable, "-m", "pip", "install", "-U", "pip"], check=True
-            )
+        subprocess.run([sys.executable, "-m", "pip", "install", "-U", "pip"])
         subprocess.run(["git", "pull"], check=True)
         subprocess.run(
             [
