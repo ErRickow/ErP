@@ -79,7 +79,7 @@ async def update(_, message: Message):
     await message.edit("<blockquote>Wet...\nSedang Update!</blockquote>")
     try:
         subprocess.run([sys.executable, "-m", "pip", "install", "-U", "pip"])
-        subprocess.run(["git", "pull"], check=True)
+        subprocess.run(["git", "pull"])
         subprocess.run(
             [
                 sys.executable,
