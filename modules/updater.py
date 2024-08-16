@@ -48,7 +48,7 @@ async def restart_cmd(_, message: Message):
         os.system("lavhost restart")
         return
 
-    await message.edit("<b>Restarting...</b>")
+    await message.reply("<blockquote>Sedang Merestart...</blockquote>")
     if os.path.exists("moonlogs.txt"):
         os.remove("moonlogs.txt")
     restart()
