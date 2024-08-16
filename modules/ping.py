@@ -27,8 +27,8 @@ from utils.misc import modules_help, prefix
 @Client.on_message(filters.command(["ping", "p"], prefix) & filters.me)
 async def ping(_, message: Message):
     start = time.time()
-    delta_ping = time.time() - start
-    await message.reply(f"<blockquote>Pong! {delta_ping * 1000000:.3f}ms</blockquote>")
+    nganu = time.time() - start
+    await message.reply(f"<blockquote>❏ POMG!!🏓 {nganu * 1000000:.3f}ms</blockquote>")
 
 
 modules_help["ping"] = {
