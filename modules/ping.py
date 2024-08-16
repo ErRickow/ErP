@@ -29,7 +29,7 @@ async def ping(_, message: Message):
     start = time.time()
     reply = await message.reply("<b>....</b>")
     delta_ping = time.time() - start
-    await reply.edit(f"<blockquote>**Pong!** `{delta_ping * 1000:.3f}ms</blockquote>`")
+    await reply.edit(f"<blockquote>Pong! {delta_ping * 1000:.3f}ms</blockquote>")
 
 
 modules_help["ping"] = {
