@@ -89,8 +89,7 @@ async def update(_, message: Message):
                 "-U",
                 "-r",
                 "requirements.txt",
-            ],
-            check=True,
+            ]
         )
         subprocess.run(
             [sys.executable, "-m", "pip", "install", "-U", *requirements_list],
