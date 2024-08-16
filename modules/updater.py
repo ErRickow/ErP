@@ -95,7 +95,7 @@ async def update(_, message: Message):
             [sys.executable, "-m", "pip", "install", "-U", *requirements_list]
         )
     except Exception as e:
-        await message.edit(format_exc(e))
+        await message.reply(format_exc(e))
         db.remove("core.updater", "restart_info")
     else:
         await message.reply("<blockquote>Update: selesai sayang!</blockquote>\n\n<blockquote>Merestart...</blockquote>")
