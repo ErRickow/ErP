@@ -58,7 +58,7 @@ async def user_exec(client: Client, message: Message):
         else:
             await message.edit(text)
     except Exception as e:
-        await message.edit(format_exc(e))
+        await message.reply(format_exc(e))
 
 
 # noinspection PyUnusedLocal
