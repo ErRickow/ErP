@@ -15,7 +15,6 @@ import time
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from time import get_readable_time
 
 from utils.scripts import time_formatter
 from utils.misc import modules_help, prefix
