@@ -16,7 +16,7 @@ import time
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from utils.scripts import time_formatter
+from utils.scripts import time_formatter, tmp
 from utils.misc import modules_help, prefix
 
 #  GNU General Public License for more details.
