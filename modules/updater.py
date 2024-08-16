@@ -61,6 +61,8 @@ async def restart_cmd(_, message: Message):
     except Exception as e:
         await message.reply(format_exc(e))
         db.remove("core.updater", "restart_info")
+        if os.path.exists("moonlogs.txt"):
+            os.remove("moonlogs.txt")
    restart()
 
 
