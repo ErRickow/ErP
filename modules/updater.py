@@ -92,8 +92,7 @@ async def update(_, message: Message):
             ]
         )
         subprocess.run(
-            [sys.executable, "-m", "pip", "install", "-U", *requirements_list],
-            check=True,
+            [sys.executable, "-m", "pip", "install", "-U", *requirements_list]
         )
     except Exception as e:
         await message.edit(format_exc(e))
