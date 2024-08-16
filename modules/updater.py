@@ -87,7 +87,6 @@ async def update(_, message: Message):
         subprocess.run(["git", "pull"])
     except Exception as e:
         await message.reply(format_exc(e))
-        db.remove("core.updater", "restart_info")
     else:
         await message.reply("<blockquote>Update: selesai sayang!</blockquote>\n\n<blockquote>Merestart...</blockquote>")
         restart()
