@@ -32,7 +32,7 @@ async def setprefix(_, message: Message):
         await message.reply(f"<blockquote>Prefix [ <code>{pref}</code> ] is set!</blockquote>")
         restart()
     else:
-        await message.reply("<b>The prefix must not be empty!</b>")
+        await message.reply("<blockquote>The prefix must not be empty!</blockquote>")
 
 
 modules_help["prefix"] = {
