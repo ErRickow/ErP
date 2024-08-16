@@ -51,7 +51,7 @@ def get_readable_time(seconds: int) -> str:
     return readable_time
 
 @Client.on_message(filters.command(["ping", "p"], prefix) & filters.me)
-async def ping(_, message: Message):
+async def get_readable_time(_, message: Message):
     start = time.time()
     nganu = time.time() - start
     uptime = time_formatter(time.time() - time.time())
