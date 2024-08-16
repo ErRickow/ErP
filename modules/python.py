@@ -48,7 +48,7 @@ async def user_exec(client: Client, message: Message):
         with redirect_stdout(stdout):
             exec(code)
         text = (
-            "<b>Code:</b>\n"
+            "<blockquote>Codenya:</blockquote>\n"
             f"<code>{code}</code>\n\n"
             "<b>Result</b>:\n"
             f"<code>{stdout.getvalue()}</code>"
