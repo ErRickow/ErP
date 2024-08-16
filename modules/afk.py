@@ -61,11 +61,11 @@ async def collect_afk_messages(bot: Client, message: Message):
 
         if GetChatID(message) not in CHAT_TYPE:
             text = (
-                f"<b>Beep boop. This is an automated message.\n"
-                f"I am not available right now.\n"
+                f"<b>Wiu Wiu.\n"
+                f"My soul is detacted right now.\n"
                 f"Last seen: {last_seen}\n"
                 f"Reason: <code>{AFK_REASON.upper()}</code>\n"
-                f"See you after I'm done doing whatever I'm doing.</b>"
+                f"See u after I'm done doing whatever I'm doing.</b>"
             )
             await bot.send_message(
                 chat_id=GetChatID(message),
