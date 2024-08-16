@@ -77,7 +77,7 @@ async def collect_afk_messages(bot: Client, message: Message):
         if GetChatID(message) in CHAT_TYPE:
             if CHAT_TYPE[GetChatID(message)] == 50:
                 text = (
-                    f"<b>This is an automated message\n"
+                    f"<b>AFK Mode\n"
                     f"Last seen: {last_seen}\n"
                     f"This is the 10th time I've told you I'm AFK right now...\n"
                     f"I'll get to you when I get to you.\n"
