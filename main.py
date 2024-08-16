@@ -123,7 +123,7 @@ async def main():
             ],
         )
 
-    logging.info("Moon-Userbot started!")
+    logging.info("Nganu Userbot started!")
 
     await idle()
 
