@@ -16,6 +16,7 @@ import time
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
+from utils.scripts import time_formatter
 from utils.misc import modules_help, prefix
 
 #  GNU General Public License for more details.
@@ -28,7 +29,8 @@ from utils.misc import modules_help, prefix
 async def ping(_, message: Message):
     start = time.time()
     nganu = time.time() - start
-    await message.reply(f"<blockquote>❏ POMG!!🏓 {nganu * 1000000:.3f}ms</blockquote>")
+    ownr = mention.user
+    await message.reply(f"<blockquote>❏ POMG!!🏓 {nganu * 1000000:.3f}ms</blockquote>\n")
 
 
 modules_help["ping"] = {
