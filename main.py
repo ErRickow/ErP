@@ -103,7 +103,7 @@ async def main():
             "update": "<blockquote>Update process completed!</blockquote>",
         }[info["type"]]
         try:
-            await app.reply_message_text(
+            await app.edit_message_text(
                 info["chat_id"], info["message_id"], text
             )
         except errors.RPCError:
