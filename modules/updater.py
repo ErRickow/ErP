@@ -54,8 +54,6 @@ async def restart_cmd(_, message: Message):
         return
 
     await message.reply("<blockquote>Sedang Merestart...</blockquote>")
-    if os.path.exists("moonlogs.txt"):
-        os.remove("moonlogs.txt")
     try:
       subprocess.run(["git", "pull"])
     except Exception as e:
