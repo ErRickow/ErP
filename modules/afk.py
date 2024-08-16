@@ -131,7 +131,7 @@ async def afk_unset(_, message: Message):
 
     if AFK:
         last_seen = subtract_time(datetime.now(), AFK_TIME).replace("ago", "").strip()
-        await message.edit(
+        await message.reply(
             f"<code>While you were away (for {last_seen}), you received {sum(USERS.values()) + sum(GROUPS.values())} "
             f"messages from {len(USERS) + len(GROUPS)} chats</code>",
         )
