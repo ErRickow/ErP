@@ -71,7 +71,7 @@ async def update(_, message: Message):
         os.system("lavhost update")
         return
 
-    await message.edit("<b>Updating...</b>")
+    await message.reply("<blockquote>Wet...\nSedang Update!</blockquote>")
     try:
         if not check_command('termux-setup-storage'):
             subprocess.run(
