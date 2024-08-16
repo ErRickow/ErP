@@ -49,11 +49,11 @@ def time_formatter(milliseconds: int) -> str:
     hours, minutes = divmod(minutes, 60)
     days, hours = divmod(hours, 24)
     tmp = (
-        ((str(days) + " day(s), ") if days else "")
-        + ((str(hours) + " hour(s), ") if hours else "")
-        + ((str(minutes) + " minute(s), ") if minutes else "")
-        + ((str(seconds) + " second(s), ") if seconds else "")
-        + ((str(milliseconds) + " millisecond(s), ") if milliseconds else "")
+        ((str(days) + " hari, ") if days else "")
+        + ((str(hours) + " jam, ") if hours else "")
+        + ((str(minutes) + " menit, ") if minutes else "")
+        + ((str(seconds) + " detik, ") if seconds else "")
+        + ((str(milliseconds) + " perdetik, ") if milliseconds else "")
     )
     return tmp[:-2]
 
